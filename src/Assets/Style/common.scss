@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Orbitron:wght@600&family=Roboto+Condensed:ital,wght@0,400;1,300&display=swap');
+
+.container{
+    width: 90%;
+    padding-top: 100px;
+    background-color: antiquewhite;
+    margin: 0 auto;
+    display: flex;
+}
+
+.card-wrapper{
+    .card-section , .pock-info{
+        flex: 0 0 50%;
+    }
+    .card{
+        width: 280px;
+        background-color: rgb(140, 189, 233);
+        border-radius: 1px solid black;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        padding: 10px;
+        height: 100px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-sizing: border-box;
+    }
+
+    .card-section{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 0.6fr));
+        grid-gap: 1rem;
+    }
+    .pock-info{
+        position: relative;
+        background-color: cadetblue;
+    }
+
+    .card-info{
+        text-align: center;
+        color: black;
+       width: 400px;
+       position: fixed;
+       left:75%;
+       top: 50%;
+       transform: translate(-50%,-50%);
+       background-color: aliceblue;
+       margin: 0 auto;
+       border-radius: 100px;
+
+       h1{
+        font-size: 30px;
+        line-height: 35px;
+
+       }
+       .abilites{
+width: 60%;
+margin: auto;
+display: flex;
+justify-content: space-between;
+align-items: center;
+        margin-top: 10px;
+        margin-bottom: 20px;
+       }
+
+       .group{
+        background-color: rgb(187, 134, 64);
+        color: white;
+        width: 100px;
+        padding: 10px;
+        font-size: 14px;
+        line-height: 17px;
+        border-radius: 6px;
+       }
+
+       .state{
+        margin-top: 10px;
+        margin-bottom: 20px;
+        text-align: left;
+        width: 60%;
+        background-color: aqua;
+        margin: 0 auto;
+        h4{
+            font-size: 14px;
+            line-height: 18px;
+            margin-bottom: 5px;
+        }
+       }
+
+       .img-bg{
+        background-color: antiquewhite;
+        border-radius: 100%;
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+       }
+    }
+
+    .card-info img{
+        width: 200px;
+        height: 300px;
+    }
+
+    .btn-group{
+        display: flex;
+
+        button{
+            outline: none;
+            border: none;
+            width: 150px;
+            padding: 8px;
+            margin: 2rem;
+            font-size: 12px;
+            background-color: cornflowerblue;
+            border-radius: 6px;
+        }
+    }
+}
